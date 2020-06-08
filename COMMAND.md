@@ -7,3 +7,8 @@ $ rsync -ar -e 'ssh -i ~/.ssh/.pem' --exclude '/path'  user-name@ec2-ip-address:
 -r:再帰的にコピー
 --exclude: 	除外対象を指定
 -e ssh: ssh経由での同期
+
+ローカルからec2
+```bash
+rsync -ar -e 'ssh -i ssh -i ~/.ssh/.pem' /local-path user-name@ec2-ip-address:/ec2-path
+```
