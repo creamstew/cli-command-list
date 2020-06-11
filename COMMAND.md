@@ -12,3 +12,9 @@ $ rsync -ar -e 'ssh -i ~/.ssh/.pem' --exclude '/path'  user-name@ec2-ip-address:
 ```bash
 rsync -ar -e 'ssh -i ssh -i ~/.ssh/.pem' /local-path user-name@ec2-ip-address:/ec2-path
 ```
+
+ファイルの中身にある文字列を探す
+```bash
+grep -rn '{検索したい文字列}' {ディレクトリパス}
+```
+-rn: ディレクトリを再帰的にたどり、見つかった行は行番号を付して表示するオプション
