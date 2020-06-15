@@ -18,3 +18,8 @@ rsync -ar -e 'ssh -i ssh -i ~/.ssh/.pem' /local-path user-name@ec2-ip-address:/e
 grep -rn '{検索したい文字列}' {ディレクトリパス}
 ```
 -rn: ディレクトリを再帰的にたどり、見つかった行は行番号を付して表示するオプション
+
+スクリプトに実行権限付与
+```bash
+chmod +x myscript
+```
